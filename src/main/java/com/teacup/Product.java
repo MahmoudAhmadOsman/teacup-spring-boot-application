@@ -22,8 +22,6 @@ import javax.persistence.Table;
 //Add Entity to annotate product class
 @Entity
 //Specify Table name in the database,if you don't specify JPA will use Product class as your Table name in the database
-//@Table(name = "productTable")
-
 @Table(name="ProductTable")
 public class Product {
 
