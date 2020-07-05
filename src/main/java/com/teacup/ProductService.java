@@ -39,12 +39,7 @@ public  List<Product> getProducts(){
 //    }
 
 
-    //============ DELETE Method ============
 
-public String deleteProduct(int id){
-        repository.deleteById(id);
-        return  "Product deleted successfully! "+id;
-}
 
     //============ UPDATE or Edit Method ============
 
@@ -57,6 +52,15 @@ public Product updateProduct(Product product){
         return repository.save(existingProduct);
 
 }
+
+
+
+    //============ DELETE Method ============
+
+    public String deleteProduct(int id){
+        repository.deleteById(id);
+        return  "Product deleted successfully! "+id;
+    }
 
 }
 
