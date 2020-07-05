@@ -10,7 +10,9 @@ public class ProductService {
     @Autowired
    private ProductRepository repository;
 
-    //Now, write all the HTTP methods
+//Now, write all the HTTP methods
+
+    //============ SAVE Method ============
     public  Product saveProduct(Product product){
         return repository.save(product);
     }
