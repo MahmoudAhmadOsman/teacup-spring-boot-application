@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Products Page | Mahmoud Osman</title>
+
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+
+<body>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <h1 class="text-danger">List of All Products </h1>
+            <hr>
+            <p class="text-primary">Displaying the list of data from the database using!</p>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Prdocut ID</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+<!--                 Loop all the products in the database-->
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-2" style="background-color:#f9f9f9; color: #333; height: 100vh;">
+            <h3>
+                <a href="products/new" class="btn btn-primary">Create New Products</a>
+            </h3>
+        </div>
+    </div>
+</section>
+</div>
+<section class="copy-right text-center">
+    <p>&copy; Copyright. 2020. Mahmoud Osman. All Rights Reserved.</p>
+</section>
+<script type="text/javascript" th:src="@{/js/custom.js}"></script>
+</body>
+
+</html>
